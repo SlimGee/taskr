@@ -1512,6 +1512,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"notyf@npm:^3.10.0":
+  version: 3.10.0
+  resolution: "notyf@npm:3.10.0"
+  checksum: 949e767f84f409f6b6e00026a82268afebf29385bcbd711491ca9a11a30e8545cf186253740ece9b89ce066bcb4ac79ab7b5170a7d56c0013f1ed7501788c313
+  languageName: node
+  linkType: hard
+
 "object-assign@npm:^4.0.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
@@ -1841,6 +1848,7 @@ __metadata:
     axios: "npm:^1.6.1"
     laravel-echo: "npm:^1.15.0"
     laravel-vite-plugin: "npm:^1.0.0"
+    notyf: "npm:^3.10.0"
     postcss: "npm:^8.4.32"
     pusher-js: "npm:^8.0.1"
     tailwindcss: "npm:^3.4.0"

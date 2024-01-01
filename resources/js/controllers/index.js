@@ -4,5 +4,9 @@
 
 import { application } from '../libs/stimulus'
 
+
+import FlashController from './flash_controller'
+application.register('flash', FlashController)
+
 import HelloController from './hello_controller'
 application.register('hello', HelloController)

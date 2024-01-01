@@ -34,6 +34,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.6.3"],\
           ["laravel-echo", "npm:1.15.3"],\
           ["laravel-vite-plugin", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.0.1"],\
+          ["notyf", "npm:3.10.0"],\
           ["postcss", "npm:8.4.32"],\
           ["pusher-js", "npm:8.3.0"],\
           ["tailwindcss", "npm:3.4.0"],\
@@ -1785,6 +1786,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["notyf", [\
+      ["npm:3.10.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/notyf-npm-3.10.0-cbd9bea1d6-10c0.zip/node_modules/notyf/",\
+        "packageDependencies": [\
+          ["notyf", "npm:3.10.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["object-assign", [\
       ["npm:4.1.1", {\
         "packageLocation": "../../../.yarn/berry/cache/object-assign-npm-4.1.1-1004ad6dec-10c0.zip/node_modules/object-assign/",\
@@ -2152,6 +2162,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.6.3"],\
           ["laravel-echo", "npm:1.15.3"],\
           ["laravel-vite-plugin", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.0.1"],\
+          ["notyf", "npm:3.10.0"],\
           ["postcss", "npm:8.4.32"],\
           ["pusher-js", "npm:8.3.0"],\
           ["tailwindcss", "npm:3.4.0"],\
