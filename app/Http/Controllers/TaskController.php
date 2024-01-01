@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateTaskRequest;
 use App\Models\Task;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\RedirectResponse;
+use Spatie\QueryBuilder\QueryBuilder;
 
 class TaskController extends Controller
 {
@@ -16,7 +17,11 @@ class TaskController extends Controller
      */
     public function index(): Renderable
     {
-        $tasks = auth()->user()->tasks()->paginate();
+        $tasks = QueryBuilder::for(auth()->user()->tasks()->getQuery())
+            ->allowedFilters(['title', 'description', 'status'])
+            ->allowedSorts('title', 'status', 'created_at')
+            ->paginate(7)
+            ->withQueryString();
 
         return view('app.tasks.index', [
             'tasks' => $tasks,
@@ -97,6 +102,6 @@ class TaskController extends Controller
     {
         $task->delete();
 
-        return back(fallback: route('tasks.index'))->with('success', 'Task was successfully removed');
+        return to_route('tasks.index')->with('success', 'Task was successfully removed');
     }
 }

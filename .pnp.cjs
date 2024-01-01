@@ -65,6 +65,7 @@ const RAW_RUNTIME_STATE =
           ["prism-themes", "npm:1.9.0"],\
           ["pusher-js", "npm:8.3.0"],\
           ["refractor", "npm:4.8.1"],\
+          ["stimulus-dropdown", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:2.1.0"],\
           ["stimulus-use", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.52.2"],\
           ["tailwindcss", "npm:3.4.0"],\
           ["twemoji", "npm:14.0.2"],\
@@ -3035,6 +3036,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["hotkeys-js", [\
+      ["npm:3.13.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/hotkeys-js-npm-3.13.3-88684aed89-10c0.zip/node_modules/hotkeys-js/",\
+        "packageDependencies": [\
+          ["hotkeys-js", "npm:3.13.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["http-cache-semantics", [\
       ["npm:4.1.1", {\
         "packageLocation": "../../../.yarn/berry/cache/http-cache-semantics-npm-4.1.1-1120131375-10c0.zip/node_modules/http-cache-semantics/",\
@@ -5338,6 +5348,7 @@ const RAW_RUNTIME_STATE =
           ["prism-themes", "npm:1.9.0"],\
           ["pusher-js", "npm:8.3.0"],\
           ["refractor", "npm:4.8.1"],\
+          ["stimulus-dropdown", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:2.1.0"],\
           ["stimulus-use", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.52.2"],\
           ["tailwindcss", "npm:3.4.0"],\
           ["twemoji", "npm:14.0.2"],\
@@ -5501,13 +5512,57 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["stimulus-dropdown", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/stimulus-dropdown-npm-2.1.0-2aa7384245-10c0.zip/node_modules/stimulus-dropdown/",\
+        "packageDependencies": [\
+          ["stimulus-dropdown", "npm:2.1.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:2.1.0", {\
+        "packageLocation": "./.yarn/__virtual__/stimulus-dropdown-virtual-8b1dba4494/4/.yarn/berry/cache/stimulus-dropdown-npm-2.1.0-2aa7384245-10c0.zip/node_modules/stimulus-dropdown/",\
+        "packageDependencies": [\
+          ["stimulus-dropdown", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:2.1.0"],\
+          ["@hotwired/stimulus", "npm:3.2.2"],\
+          ["@types/hotwired__stimulus", null],\
+          ["stimulus-use", "virtual:8b1dba4494b472c7ae0936e635fd511154b94bdf86956f4d93bb874499ecfb70a09d96e7f5c49deef727909ba09677538349ddaf6b4697afd0500503755714a3#npm:0.51.3"]\
+        ],\
+        "packagePeers": [\
+          "@hotwired/stimulus",\
+          "@types/hotwired__stimulus"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["stimulus-use", [\
+      ["npm:0.51.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/stimulus-use-npm-0.51.3-6adf0ab296-10c0.zip/node_modules/stimulus-use/",\
+        "packageDependencies": [\
+          ["stimulus-use", "npm:0.51.3"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["npm:0.52.2", {\
         "packageLocation": "../../../.yarn/berry/cache/stimulus-use-npm-0.52.2-22cb27e749-10c0.zip/node_modules/stimulus-use/",\
         "packageDependencies": [\
           ["stimulus-use", "npm:0.52.2"]\
         ],\
         "linkType": "SOFT"\
+      }],\
+      ["virtual:8b1dba4494b472c7ae0936e635fd511154b94bdf86956f4d93bb874499ecfb70a09d96e7f5c49deef727909ba09677538349ddaf6b4697afd0500503755714a3#npm:0.51.3", {\
+        "packageLocation": "./.yarn/__virtual__/stimulus-use-virtual-a7eb44cf19/4/.yarn/berry/cache/stimulus-use-npm-0.51.3-6adf0ab296-10c0.zip/node_modules/stimulus-use/",\
+        "packageDependencies": [\
+          ["stimulus-use", "virtual:8b1dba4494b472c7ae0936e635fd511154b94bdf86956f4d93bb874499ecfb70a09d96e7f5c49deef727909ba09677538349ddaf6b4697afd0500503755714a3#npm:0.51.3"],\
+          ["@hotwired/stimulus", "npm:3.2.2"],\
+          ["@types/hotwired__stimulus", null],\
+          ["hotkeys-js", "npm:3.13.3"]\
+        ],\
+        "packagePeers": [\
+          "@hotwired/stimulus",\
+          "@types/hotwired__stimulus"\
+        ],\
+        "linkType": "HARD"\
       }],\
       ["virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.52.2", {\
         "packageLocation": "./.yarn/__virtual__/stimulus-use-virtual-fd1c5e910a/4/.yarn/berry/cache/stimulus-use-npm-0.52.2-22cb27e749-10c0.zip/node_modules/stimulus-use/",\

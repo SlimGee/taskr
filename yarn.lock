@@ -2225,6 +2225,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hotkeys-js@npm:>=3":
+  version: 3.13.3
+  resolution: "hotkeys-js@npm:3.13.3"
+  checksum: 30d313ebb834be6f3a63d5a733c6e1789ffd011d872d5b3b54c5127175dc089e91cb235a7c4f3eb1dda68451b356c3fcf4f8b62db28d0be13912767a9de96564
+  languageName: node
+  linkType: hard
+
 "http-cache-semantics@npm:^4.1.1":
   version: 4.1.1
   resolution: "http-cache-semantics@npm:4.1.1"
@@ -4341,6 +4348,7 @@ __metadata:
     prism-themes: "npm:^1.9.0"
     pusher-js: "npm:^8.0.1"
     refractor: "npm:^4.8.1"
+    stimulus-dropdown: "npm:^2.1.0"
     stimulus-use: "npm:^0.52.2"
     tailwindcss: "npm:^3.4.0"
     twemoji: "npm:^14.0.2"
@@ -4478,6 +4486,28 @@ __metadata:
   dependencies:
     minipass: "npm:^7.0.3"
   checksum: b091f2ae92474183c7ac5ed3f9811457e1df23df7a7e70c9476eaa9a0c4a0c8fc190fb45acefbf023ca9ee864dd6754237a697dc52a0fb182afe65d8e77443d8
+  languageName: node
+  linkType: hard
+
+"stimulus-dropdown@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "stimulus-dropdown@npm:2.1.0"
+  dependencies:
+    stimulus-use: "npm:^0.51.1"
+  peerDependencies:
+    "@hotwired/stimulus": ^3.0.0
+  checksum: 0d7200a8c145c5c8618a3ff55c235673783f9e3fa547f8f5c5fc73e1fcc5f70a2290c745aa26d7f958b63e6191f32c5ac676ad13c4ebc00c3623d18e19773484
+  languageName: node
+  linkType: hard
+
+"stimulus-use@npm:^0.51.1":
+  version: 0.51.3
+  resolution: "stimulus-use@npm:0.51.3"
+  dependencies:
+    hotkeys-js: "npm:>=3"
+  peerDependencies:
+    "@hotwired/stimulus": ">= 3"
+  checksum: 90a6cc5a1e9148dcb6a80a20dc34633ee0cd3fed5829433287a4b335df9c6c90599d29c8552d221b4acc258987d7647d8b19784da33c38caa3c7d4d250cf1779
   languageName: node
   linkType: hard
 
