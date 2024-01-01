@@ -50,9 +50,6 @@
                             id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
                             <span class="sr-only">Open user menu</span>
                             Hi, {{ auth()->user()->name }}
-                            <img class="w-8 h-8 rounded-full"
-                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gough.png"
-                                alt="user photo" />
                         </button>
 
 
@@ -171,10 +168,10 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('home') }}"
-                            class="flex items-center p-2 text-base font-medium rounded-lg dark:text-white text-slate-900 group dark:hover:bg-slate-700 hover:bg-slate-100">
-
-
+                        <a href="{{ route('tasks.index') }}" @class([
+                            'dark:bg-slate-700 bg-slate-100' => Route::is('tasks.*'),
+                            'flex items-center p-2 text-base font-medium rounded dark:text-white text-slate-900 group dark:hover:bg-slate-700 hover:bg-slate-100',
+                        ])>
                             <span
                                 class="transition duration-75 material-symbols-outlined text-slate-500 dark:text-slate-400 dark:group-hover:text-white group-hover:text-slate-900">
                                 task

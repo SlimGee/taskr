@@ -30,6 +30,7 @@ const RAW_RUNTIME_STATE =
           ["@hotwired/turbo", "npm:7.3.0"],\
           ["@tailwindcss/forms", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.7"],\
           ["@tailwindcss/typography", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.10"],\
+          ["animate.css", "npm:4.1.1"],\
           ["autoprefixer", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:10.4.16"],\
           ["axios", "npm:1.6.3"],\
           ["laravel-echo", "npm:1.15.3"],\
@@ -607,6 +608,15 @@ const RAW_RUNTIME_STATE =
           ["aggregate-error", "npm:3.1.0"],\
           ["clean-stack", "npm:2.2.0"],\
           ["indent-string", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["animate.css", [\
+      ["npm:4.1.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/animate.css-npm-4.1.1-5c526dcd84-10c0.zip/node_modules/animate.css/",\
+        "packageDependencies": [\
+          ["animate.css", "npm:4.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2158,6 +2168,7 @@ const RAW_RUNTIME_STATE =
           ["@hotwired/turbo", "npm:7.3.0"],\
           ["@tailwindcss/forms", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.7"],\
           ["@tailwindcss/typography", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.10"],\
+          ["animate.css", "npm:4.1.1"],\
           ["autoprefixer", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:10.4.16"],\
           ["axios", "npm:1.6.3"],\
           ["laravel-echo", "npm:1.15.3"],\
