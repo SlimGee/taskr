@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SocialiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/auth/{driver}/redirect', [SocialiteController::class, 'redirect'])
+    ->name('socialite.redirect')
+    ->whereIn('driver', ['google']);
+
+Route::get('/auth/{driver}/callback', [SocialiteController::class, 'callback'])
+    ->name('socialite.callback')
+    ->whereIn('driver', ['google']);
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home');
 });
