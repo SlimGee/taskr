@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.codex-editor {
+    @apply w-full;
+}
+
+.milkdown .editor {
+    @apply py-0 px-4 overflow-x-scroll;
+    max-height: 380px;
+    min-height: 140px;
+}
+
+.milkdown .editor {
+
+}
+
+.milkdown .ProseMirror-focused {
+    outline:none !important;
+}

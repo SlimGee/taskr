@@ -85,7 +85,7 @@
                 </div>
             </div>
             <div class="prose prose-slate md:prose-lg dark:prose-invert">
-                {!! $task->description !!}
+                {!! Str::markdown($task->description) !!}
             </div>
         </div>
     </section>

@@ -47,12 +47,15 @@
                     </div>
 
                     <div class="mb-3">
-                        <x-form.label for="description">
+                        <x-form.label for="description" class="mb-1">
                             Description
                         </x-form.label>
-                        <x-form.textarea name="description" class="mt-1 w-full"
+                        <x-form.textarea name="description" class="hidden mt-1 w-full" data-controller="milkdown"
                             error="description">{{ old('description') }}</x-form.textarea>
 
+                        <span class="mt-1 italic font-medium text-slate-600 dark:text-slate-300">
+                            Markdown syntax is supported...
+                        </span>
                     </div>
 
                     <div>
