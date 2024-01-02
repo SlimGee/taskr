@@ -3,7 +3,22 @@
 Taskr is a simple task management application using Laravel
 
 ## Installation
+Clone the repository
+```bash
+git clone https://github.com/SlimGee/taskr.git
+```
+Or extract the zip file
 
+```bash
+tar -xvf taskr.zip
+```
+Cd into the project directory and install composer dependencies
+
+```bash
+cd taskr
+```
+
+Composer
 ```bash
 composer install --prefer-dist
 ```
