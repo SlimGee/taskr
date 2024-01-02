@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Task;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class TaskSeeder extends Seeder
@@ -12,6 +13,12 @@ class TaskSeeder extends Seeder
      */
     public function run(): void
     {
-        Task::factory(10000)->create(['user_id' => 1]);
+
+        if (User::count() < 1) {
+            $this->command->info('Please create an account first by visiting /register in your browser');
+            exit();
+        }
+
+        Task::factory(2000)->create(['user_id' => User::first()->id]);
     }
 }
