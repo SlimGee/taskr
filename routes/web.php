@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SocialiteController;
 use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
@@ -30,4 +31,6 @@ Route::middleware(['auth'])->group(function () {
         ->name('tasks.status');
 
     Route::resource('tasks', TaskController::class);
+
+    Route::singleton('me', ProfileController::class)->only(['show']);
 });

@@ -46,7 +46,7 @@
                 <div class="flex items-center lg:order-2">
                     <div class="inline relative" {{ stimulus_controller('dropdown') }}>
                         <button type="button" data-action="dropdown#toggle click@window->dropdown#hide"
-                            class="flex items-center mx-3 space-x-3 text-sm font-semibold rounded-full md:mr-0 focus:ring-4 bg-slate-800 dark:text-slate-200 dark:focus:ring-slate-600 focus:ring-slate-300"
+                            class="flex items-center p-2 mx-3 space-x-3 text-sm font-semibold rounded md:mr-0 focus:ring-4 bg-slate-800 dark:text-slate-200 dark:focus:ring-slate-600 focus:ring-slate-300"
                             id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
                             <span class="sr-only">Open user menu</span>
                             Hi, {{ auth()->user()->name }}
@@ -71,7 +71,7 @@
 
                             <ul class="py-1 text-slate-700 dark:text-slate-300" aria-labelledby="dropdown">
                                 <li>
-                                    <a href="#"
+                                    <a href="{{ route('me.show') }}"
                                         class="block py-2 px-4 text-sm dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-white hover:bg-slate-100">My
                                         profile</a>
                                 </li>
@@ -105,9 +105,10 @@
 
                 <ul class="space-y-2">
                     <li>
-                        <a href="{{ route('home') }}"
-                            class="flex items-center p-2 text-base font-medium rounded-lg dark:text-white text-slate-900 group dark:hover:bg-slate-700 hover:bg-slate-100">
-
+                        <a href="{{ route('home') }}" @class([
+                            'dark:bg-slate-700 bg-slate-100' => Route::is('home'),
+                            'flex items-center p-2 text-base font-medium rounded dark:text-white text-slate-900 group dark:hover:bg-slate-700 hover:bg-slate-100',
+                        ])>
                             <span
                                 class="transition duration-75 material-symbols-outlined text-slate-500 dark:text-slate-400 dark:group-hover:text-white group-hover:text-slate-900">
                                 dashboard
@@ -130,15 +131,30 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="flex items-center p-2 text-base font-medium rounded-lg transition duration-75 dark:text-white text-slate-900 group dark:hover:bg-slate-700 hover:bg-slate-100">
+                        <a href="{{ route('me.show') }}" @class([
+                            'dark:bg-slate-700 bg-slate-100' => Route::is('me.*'),
+                            'flex items-center p-2 text-base font-medium rounded dark:text-white text-slate-900 group dark:hover:bg-slate-700 hover:bg-slate-100',
+                        ])>
                             <span
                                 class="transition duration-75 material-symbols-outlined text-slate-500 dark:text-slate-400 dark:group-hover:text-white group-hover:text-slate-900">
-                                settings
+                                person
                             </span>
-                            <span class="ml-3">Settings</span>
+                            <span class="ml-3">Profile</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="{{ route('logout') }}" data-turbo-method="post" @class([
+                            'dark:bg-slate-700 bg-slate-100' => Route::is('logout'),
+                            'flex items-center p-2 text-base font-medium rounded dark:text-white text-slate-900 group dark:hover:bg-slate-700 hover:bg-slate-100',
+                        ])>
+                            <span
+                                class="transition duration-75 material-symbols-outlined text-slate-500 dark:text-slate-400 dark:group-hover:text-white group-hover:text-slate-900">
+                                logout
+                            </span>
+                            <span class="ml-3">Logout</span>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
 
