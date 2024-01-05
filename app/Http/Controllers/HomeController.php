@@ -21,9 +21,9 @@ class HomeController extends Controller
             ->map(fn ($tasks) => $tasks->count());
 
         return view('app.home.index', [
-            'pendingTasks' => $counts[TaskStatus::PENDING->value],
-            'completedTasks' => $counts[TaskStatus::COMPLETED->value],
-            'inProgressTasks' => $counts[TaskStatus::IN_PROGRESS->value],
+            'pendingTasks' => $counts[TaskStatus::PENDING->value] ?? 0,
+            'completedTasks' => $counts[TaskStatus::COMPLETED->value] ?? 0,
+            'inProgressTasks' => $counts[TaskStatus::IN_PROGRESS->value] ?? 0,
             'allTasks' => $counts->sum(),
         ]);
 
